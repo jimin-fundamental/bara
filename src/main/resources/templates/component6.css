@@ -1,0 +1,173 @@
+.forgot {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 565px;
+  left: 79px;
+  font-size: var(--font-size-base);
+  font-weight: 300;
+  font-family: var(--font-mulish);
+  color: var(--color-gray-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 234px;
+  height: 43px;
+}
+.child10 {
+  border: 0;
+  background-color: var(--color-whitesmoke-100);
+  top: 251px;
+  left: 36px;
+  height: 63px;
+}
+.child10,
+.child11,
+.loginbtnactionloginfirebase-child {
+  position: absolute;
+  border-radius: var(--br-6xs);
+  width: 319px;
+}
+.child11 {
+  border: 0;
+  background-color: var(--color-whitesmoke-100);
+  top: 336px;
+  left: 36px;
+  height: 63px;
+}
+.loginbtnactionloginfirebase-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-forestgreen-100);
+  height: 55px;
+  cursor: pointer;
+}
+.btntext4 {
+  position: absolute;
+  top: 8.7px;
+  left: 110px;
+  font-size: var(--font-size-lg);
+  display: flex;
+  font-family: var(--font-mulish);
+  color: var(--color-whitesmoke-100);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 37.5px;
+}
+.loginbtnactionloginfirebase {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 427px;
+  left: 37px;
+  width: 319px;
+  height: 55px;
+}
+.signupbtn-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkseagreen-100);
+  width: 319px;
+  height: 55px;
+}
+.btntext5 {
+  top: 8.7px;
+  left: 43px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-mulish);
+  color: var(--color-gray-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 234px;
+  height: 37.5px;
+}
+.btntext5,
+.h3,
+.signupbtn {
+  position: absolute;
+}
+.signupbtn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 491px;
+  left: 36px;
+  width: 319px;
+  height: 55px;
+}
+.h3 {
+  margin: 0;
+  top: 154px;
+  left: 135px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 64px;
+}
+.vector-icon18 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.eye4,
+.vector-icon19 {
+  position: absolute;
+  top: 42.54%;
+}
+.vector-icon19 {
+  height: 30.94%;
+  width: 27.23%;
+  right: 30.52%;
+  bottom: 26.52%;
+  left: 42.25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.eye4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 2.14%;
+  width: 5.46%;
+  right: 14.28%;
+  bottom: 55.32%;
+  left: 80.26%;
+}
+.div41 {
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-mulish);
+}

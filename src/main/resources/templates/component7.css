@@ -1,0 +1,269 @@
+.div43,
+.image-9-icon1 {
+  position: absolute;
+  top: 436px;
+  left: 139px;
+  width: 280px;
+  height: 388.5px;
+}
+.div43 {
+  top: 36px;
+  left: 154px;
+  display: inline-block;
+  width: 83px;
+  height: 62px;
+  -webkit-text-stroke: 1px #00802b;
+}
+.child12,
+.child13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  height: 57px;
+}
+.child12 {
+  border: 1px solid var(--color-black);
+  background-color: var(--light-light-1);
+  box-shadow: 0 4px 14px #e5e5e5;
+  box-sizing: border-box;
+  width: 342px;
+}
+.child13 {
+  width: 56px;
+}
+.vector-icon20,
+.vector-icon21 {
+  position: absolute;
+  height: 33.33%;
+  width: 33.93%;
+  top: 26.32%;
+  right: 53.57%;
+  bottom: 40.35%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon21 {
+  height: 19.3%;
+  width: 17.86%;
+  top: 54.39%;
+  right: 42.86%;
+  bottom: 26.32%;
+  left: 39.29%;
+}
+.button10,
+.div44 {
+  position: absolute;
+  height: 57px;
+}
+.button10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 286px;
+  width: 56px;
+}
+.div44 {
+  top: 325px;
+  left: 24px;
+  width: 342px;
+}
+.group-child10 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-forestgreen-100);
+  width: 399px;
+  height: 79px;
+}
+.div45,
+.group-child10,
+.icon4 {
+  position: absolute;
+}
+.icon4 {
+  top: 12px;
+  left: 39px;
+  width: 23.7px;
+  height: 30px;
+}
+.div45 {
+  top: 50px;
+  left: 18px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--light-light-1);
+  text-align: left;
+}
+.group-child11,
+.icon-parent {
+  top: 0;
+  width: 110px;
+  height: 79px;
+}
+.group-child11 {
+  position: absolute;
+  left: 0;
+  background-color: var(--color-forestgreen-200);
+}
+.icon-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 283px;
+}
+.div46,
+.icon-parent,
+.icon5 {
+  position: absolute;
+}
+.icon5 {
+  top: 12px;
+  left: 30px;
+  width: 30px;
+  height: 29.4px;
+}
+.div46 {
+  top: 50px;
+  left: 32px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--light-light-1);
+  text-align: left;
+}
+.group-child12,
+.icon-group {
+  top: 0;
+  width: 93px;
+  height: 79px;
+}
+.group-child12 {
+  position: absolute;
+  left: 0;
+  background-color: var(--color-forestgreen-200);
+}
+.icon-group {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 190px;
+}
+.div47,
+.icon-group,
+.icon6 {
+  position: absolute;
+}
+.icon6 {
+  top: 12px;
+  left: 32px;
+  width: 30px;
+  height: 31.5px;
+}
+.div47 {
+  top: 50px;
+  left: 34px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--light-light-1);
+  text-align: left;
+}
+.icon-container {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 97px;
+  width: 93px;
+  height: 79px;
+}
+.icon7 {
+  position: relative;
+  width: 30.3px;
+  height: 30px;
+}
+.div48 {
+  position: absolute;
+  top: 50px;
+  left: 41px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--light-light-1);
+  text-align: left;
+}
+.group-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 23.31%;
+  top: 0;
+  right: 75.69%;
+  bottom: 0;
+  left: 1%;
+}
+.rectangle-parent6 {
+  position: absolute;
+  top: 765px;
+  left: -5px;
+  width: 399px;
+  height: 79px;
+}
+.vector-icon22 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.87;
+}
+.arrow-back-ios5,
+.vector-icon22,
+.vector-icon23 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon23 {
+  height: 78.33%;
+  width: 44.58%;
+  top: 10.83%;
+  right: 29.58%;
+  bottom: 10.83%;
+  left: 25.83%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.arrow-back-ios5 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 55px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+}
+.div42 {
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-41xl);
+  color: var(--color-forestgreen-100);
+  font-family: var(--font-dongle);
+}

@@ -1,0 +1,148 @@
+.b15 {
+  position: absolute;
+  top: 154px;
+  left: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 64px;
+}
+.group-child7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  width: 319px;
+  height: 55px;
+}
+.btntext3 {
+  position: absolute;
+  top: 9px;
+  left: 66px;
+  font-size: var(--font-size-lg);
+  display: flex;
+  font-family: var(--font-mulish);
+  color: var(--color-whitesmoke-100);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 38px;
+}
+.group-child8,
+.vector-container {
+  border: 0;
+  position: absolute;
+  width: 319px;
+}
+.vector-container {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  top: 428px;
+  left: 36px;
+  height: 55px;
+}
+.group-child8 {
+  background-color: var(--color-whitesmoke-100);
+  top: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  height: 63px;
+}
+.vector-icon12,
+.vector-icon13 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon13 {
+  height: 30.94%;
+  width: 27.23%;
+  top: 42.54%;
+  right: 30.52%;
+  bottom: 26.52%;
+  left: 42.25%;
+}
+.eye2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 28.73%;
+  width: 6.68%;
+  top: 31.75%;
+  right: 5.24%;
+  bottom: 39.52%;
+  left: 88.09%;
+}
+.rectangle-parent4,
+.rectangle-parent5 {
+  position: absolute;
+  top: 334px;
+  left: 36px;
+  width: 319px;
+  height: 63px;
+}
+.rectangle-parent5 {
+  top: 249px;
+}
+.vector-icon16 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.87;
+}
+.arrow-back-ios4,
+.vector-icon16,
+.vector-icon17 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon17 {
+  height: 78.33%;
+  width: 44.58%;
+  top: 10.83%;
+  right: 29.58%;
+  bottom: 10.83%;
+  left: 25.83%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.arrow-back-ios4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 53px;
+  left: 27px;
+  width: 24px;
+  height: 24px;
+}
+.div40 {
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-mulish);
+}
