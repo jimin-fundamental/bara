@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Workspace/bara/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Workspace/bara/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Workspace/bara/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Workspace\\bara\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Workspace\\bara\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Workspace/bara/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Workspace/bara/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Workspace/bara/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Workspace\\bara\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
