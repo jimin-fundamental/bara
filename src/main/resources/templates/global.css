@@ -85,6 +85,14 @@ body {
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size-41xl);
+    color: var(--color-black);
+    font-family: var(--font-dongle);
 }
 
 @media only screen and (max-width: 600px, max-height: 1000px) {
@@ -100,4 +108,53 @@ body {
   .rectangle-parent6 {
     width: 100%;
   }
+}
+
+.menu-nav /* 하단 메뉴바 */
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 79px;
+  background-color: var(--color-forestgreen-100);
+  display: flex;
+}
+
+.menu-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.menu-item img {
+  width: 30px; /* 아이콘의 너비 조절 */
+  height: auto; /* 아이콘의 높이 자동 조절 */
+}
+
+.menu-item div {
+  margin-top: 5px; /* 아이콘과 텍스트 사이의 간격 조절 */
+  font-size: var(--font-size-sm);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--light-light-1);
+  text-align: center;
+  -webkit-text-stroke: 1px #fff;
+}
+
+
+
+.logo { /* 바라 로고 */
+  position: absolute;
+  top: 36px;
+  color: var(--color-forestgreen-100);
+  display: inline-block;
+  width: 83px;
+  height: 62px;
+  -webkit-text-stroke: 1px #00802b;
+  text-align: center;
 }

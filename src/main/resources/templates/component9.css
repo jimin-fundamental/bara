@@ -9,16 +9,6 @@
   width: 390px;
   height: 528px;
 }
-.div70 {
-  position: absolute;
-  top: 36px;
-  color: var(--color-forestgreen-100);
-  display: inline-block;
-  width: 83px;
-  height: 62px;
-  -webkit-text-stroke: 1px #00802b;
-  text-align: center; /* 가운데 정렬을 위해 추가 */
-}
 .image-8-icon1 {
   position: absolute;
   top: 97px;
