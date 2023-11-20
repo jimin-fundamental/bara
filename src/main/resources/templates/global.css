@@ -147,7 +147,6 @@ body {
 }
 
 
-
 .logo { /* 바라 로고 */
   position: absolute;
   top: 36px;
@@ -158,3 +157,5 @@ body {
   -webkit-text-stroke: 1px #00802b;
   text-align: center;
 }
+
+input { text-indent: 20px; }

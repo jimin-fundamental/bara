@@ -1,7 +1,6 @@
 .b15 {
   position: absolute;
   top: 154px;
-  left: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +40,6 @@
   padding: 0;
   background-color: transparent;
   top: 428px;
-  left: 36px;
   height: 55px;
 }
 .group-child8 {
@@ -89,7 +87,6 @@
 .rectangle-parent5 {
   position: absolute;
   top: 334px;
-  left: 36px;
   width: 319px;
   height: 63px;
 }
