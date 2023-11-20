@@ -72,3 +72,32 @@ body {
   /* Effects */
   --elevation-3: 0px 4px 16px rgba(0, 0, 0, 0.25);
 }
+
+.screen {
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
+
+@media only screen and (max-width: 600px, max-height: 1000px) {
+  .rectangle-parent6 {
+    height: 50px;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-xs);
+  }
+
+  .rectangle-parent6 {
+    width: 100%;
+  }
+}
