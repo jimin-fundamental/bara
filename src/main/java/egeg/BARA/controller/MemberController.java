@@ -52,6 +52,16 @@ public class MemberController {
         return ResponseEntity.ok(Collections.singletonMap("message", "User is identified successfully"));
     }
 
+//    @PostMapping("/emails/verification-requests/{email}")
+//    public ResponseEntity sendMessage(@RequestParam("email") String email) {
+////        if (!validateEmail(email)) {//이메일이 올바른 형식인지 확인
+////            return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Invalid email format"));
+////        }
+//        memberService.sendCodeToEmail(email); //인증코드 발송
+//
+//        return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
+//    }
+
     @PostMapping("/emails/verification-requests")
     public ResponseEntity sendMessage(@RequestParam("email") String email) {
 //        if (!validateEmail(email)) {//이메일이 올바른 형식인지 확인
