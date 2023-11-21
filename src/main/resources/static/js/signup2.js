@@ -17,7 +17,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         password: password
     };
 
-    fetch('http://localhost:8080/api/users/signup', {
+    fetch('http://localhost:8080/users/signup2', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

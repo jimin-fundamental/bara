@@ -3,15 +3,15 @@
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var emailId = document.getElementById('signup_name').value;
-    var password = document.getElementById('signup_password').value;
+    var emailId = document.getElementById('inputEmail').value;
+    var password = document.getElementById('inputPw').value;
 
     let user = {
         name: name,
         password: password
     };
 
-    fetch('http://localhost:8080/api/users/signup', {
+    fetch('http://localhost:8080/users/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

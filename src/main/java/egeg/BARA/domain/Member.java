@@ -11,8 +11,8 @@ import java.util.Set;
 
 @Entity
 //@Getter @Setter
-@Table(name = "users")
-public class User {
+@Table(name = "members")
+public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;//컴퓨터가 자동생성
@@ -68,9 +68,9 @@ public class User {
 
 
     //constructer
-    public User(){}
+    public Member(){}
 
-    public User(String emailId, String nickname, String password) {
+    public Member(String emailId, String nickname, String password) {
         this.emailId = emailId;
         this.nickname = nickname;
         this.password = password;
