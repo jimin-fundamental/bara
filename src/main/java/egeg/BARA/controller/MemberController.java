@@ -23,8 +23,8 @@ public class MemberController {
     private final MemberRepository memberRepository;
     private final MemberService memberService;
     private static final Logger LOGGER = LoggerFactory.getLogger(MemberController.class);
-    private static final Pattern VALID_EWHA_EMAIL_ADDRESS_REGEX =
-            Pattern.compile("^[A-Z0-9._%+-]+@ewhain\\.net$", Pattern.CASE_INSENSITIVE);
+//    private static final Pattern VALID_EWHA_EMAIL_ADDRESS_REGEX =
+//            Pattern.compile("^[A-Z0-9._%+-]+@ewhain\\.net$", Pattern.CASE_INSENSITIVE);
 
     @Autowired
     public MemberController(MemberRepository memberRepository, MemberService memberService) {
@@ -33,10 +33,10 @@ public class MemberController {
     }
 
     // Helper method to validate email format
-    private boolean validateEmail(String emailStr) {
-        Matcher matcher = VALID_EWHA_EMAIL_ADDRESS_REGEX.matcher(emailStr);
-        return matcher.find();
-    }
+//    private boolean validateEmail(String emailStr) {
+//        Matcher matcher = VALID_EWHA_EMAIL_ADDRESS_REGEX.matcher(emailStr);
+//        return matcher.find();
+//    }
 
     //회원가입과 로그인
     @PostMapping("/signup")
@@ -54,9 +54,9 @@ public class MemberController {
 
     @PostMapping("/emails/verification-requests")
     public ResponseEntity sendMessage(@RequestParam("email") String email) {
-        if (!validateEmail(email)) {//이메일이 올바른 형식인지 확인
-            return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Invalid email format"));
-        }
+//        if (!validateEmail(email)) {//이메일이 올바른 형식인지 확인
+//            return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Invalid email format"));
+//        }
         memberService.sendCodeToEmail(email); //인증코드 발송
 
         return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
