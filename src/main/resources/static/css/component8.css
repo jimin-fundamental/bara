@@ -27,7 +27,6 @@
   background-color: transparent;
   position: absolute;
   top: 107px;
-  left: 28px;
   width: 333px;
   height: 44px;
 }
@@ -314,7 +313,6 @@
 .group-container {
   position: absolute;
   top: 166px;
-  left: 0;
   width: 389px;
   height: 101px;
   overflow-x: auto;
@@ -345,12 +343,11 @@
   color: var(--light-light-1);
   text-align: left;
 }
-.group-child23 {
+.menu-my {
   position: absolute;
   top: 0;
   left: 0;
   background-color: var(--color-forestgreen-200);
-  width: 110px;
   height: 79px;
 }
 .icon-parent1 {
@@ -457,13 +454,7 @@
   bottom: 0;
   left: 1%;
 }
-.rectangle-parent8 {
-  position: absolute;
-  top: 765px;
-  left: -3px;
-  width: 399px;
-  height: 79px;
-}
+
 .vector-icon24 {
   height: 100%;
   width: 100%;

@@ -9,19 +9,9 @@
   width: 390px;
   height: 528px;
 }
-.div70 {
-  top: 36px;
-  left: 154px;
-  color: var(--color-forestgreen-100);
-  display: inline-block;
-  width: 83px;
-  height: 62px;
-  -webkit-text-stroke: 1px #00802b;
-}
 .image-8-icon1 {
   position: absolute;
   top: 97px;
-  left: 0;
   width: 388px;
   height: 231px;
 }
@@ -59,15 +49,14 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 762px;
+  bottom: 5%;
   left: calc(50% - 180px);
   width: 360px;
   height: 60px;
 }
 .h1 {
   margin: 0;
-  top: 592px;
-  left: 39px;
+  bottom: 25%;
   font-size: var(--font-size-11xl);
   font-weight: 800;
   font-family: var(--font-inter);
@@ -129,8 +118,9 @@
 }
 .frame-section {
   position: absolute;
-  top: 348px;
-  left: 1px;
+  top: 50%; /* 상위 요소의 중앙을 기준으로 설정 */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 가운데 정렬을 위한 transform */
   width: 388px;
   height: 224px;
   overflow: hidden;
@@ -164,8 +154,7 @@
   height: 50px;
 }
 .div72 {
-  top: 682px;
-  left: 119px;
+  bottom: 15%;
   width: 154px;
   height: 53px;
   text-align: left;
@@ -209,15 +198,22 @@
   width: 24px;
   height: 24px;
 }
-.div69 {
+#participatingScreen {
   position: relative;
   border-radius: var(--br-5xl);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
-  height: 844px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: var(--font-size-41xl);
   color: var(--color-black);
   font-family: var(--font-dongle);
+}
+
+.child14,
+.div70 {
+  position: absolute;
 }

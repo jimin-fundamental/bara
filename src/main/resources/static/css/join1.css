@@ -2,18 +2,24 @@
 .child9 {
   border: 0;
   background-color: var(--color-whitesmoke-100);
-  left: 36px;
   border-radius: var(--br-6xs);
   height: 63px;
 }
 .child8 {
   position: absolute;
-  top: 253px;
   width: 209px;
+  left: 0;
 }
 .child9 {
   top: 338px;
   width: 319px;
+}
+.emailDiv {
+  display: flex;
+  position: absolute;
+  top: 253px;
+  width: 319px;
+  height: 63px;
 }
 .b14,
 .child9,
@@ -30,8 +36,8 @@
   height: 64px;
 }
 .label1 {
-  top: calc(50% - 11.5px);
-  left: calc(50% - 35px);
+  flex-grow: 1;
+  height: 63px;
   font-size: var(--font-size-lg);
   font-weight: 600;
   font-family: var(--font-hind);
@@ -83,7 +89,6 @@
   background-color: transparent;
   position: absolute;
   top: 429px;
-  left: 36px;
   width: 319px;
   height: 55px;
 }
