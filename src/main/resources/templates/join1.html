@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<!--<html>-->
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./join1.css" />
+<!--    <link rel="stylesheet" href="./global.css" />-->
+<!--    <link rel="stylesheet" href="./join1.css" />-->
+
+    <link rel="stylesheet" th:href="@{./global.css}" />
+    <link rel="stylesheet" th:href="@{./join1.css}" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap"
@@ -74,7 +79,7 @@
           class="group-child6"
           alt=""
           src="./public/rectangle-5.svg"
-          id="rectangle"
+          id="signupForm1"
         />
 
         <b class="btntext2">인증 확인</b>
@@ -86,8 +91,8 @@
       </button>
     </div>
 
-    <script src="js/signup1.js">
-      var rectangle = document.getElementById("rectangle");
+    <script src="js/signup.js">
+      var rectangle = document.getElementById("signupForm1");
       if (rectangle) {
         rectangle.addEventListener("click", function (e) {
           window.location.href = "./join2.html";
