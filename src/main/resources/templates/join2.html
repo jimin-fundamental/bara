@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./join2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jua:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="screen" id="signup2Screen">
+      <div class="loginbtnactionregisterfireb">
+        <b class="btntext">로그인</b>
+      </div>
+      <b class="b13">회원가입</b>
+      <input
+        class="rectangle-input"
+        name="nickname"
+        id="nickname"
+        placeholder="닉네임"
+        type="text"
+      />
+
+      <div class="rectangle-parent2">
+        <input
+          class="group-child4"
+          name="inputPw"
+          id="inputPw"
+          placeholder="비밀번호"
+          type="text"
+        />
+
+        <button class="eye" id="pwVisible">
+          <img class="vector-icon4" alt="" src="./public/vector2.svg" />
+
+          <img class="vector-icon5" alt="" src="./public/vector3.svg" />
+        </button>
+      </div>
+      <div class="rectangle-parent3">
+        <input
+          class="group-child4"
+          name="inputPwCheck"
+          id="inputPwCheck"
+          placeholder="비밀번호 확인"
+          type="text"
+        />
+
+        <button class="eye" id="pwCheckVisible">
+          <img class="vector-icon4" alt="" src="./public/vector2.svg" />
+
+          <img class="vector-icon5" alt="" src="./public/vector3.svg" />
+        </button>
+      </div>
+      <button class="button8" id="checkDuplicatin">
+        <div class="label">중복 확인</div>
+      </button>
+      <button class="vector-parent" id="completeSignup">
+        <img
+          class="rectangle-icon"
+          alt=""
+          src="./public/rectangle-5.svg"
+          id="rectangle"
+        />
+
+        <b class="btntext1">회원가입 완료</b>
+      </button>
+      <button class="arrow-back-ios2" id="backBtn">
+        <img class="vector-icon8" alt="" src="./public/vector.svg" />
+
+        <img class="vector-icon9" alt="" src="./public/vector1.svg" />
+      </button>
+    </div>
+
+    <script src="js/signup2.js">
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+      </script>
+  </body>
+</html>
