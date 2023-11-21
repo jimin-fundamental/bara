@@ -20,22 +20,20 @@
   border-radius: var(--br-5xl);
   background-color: var(--light-light-1);
   box-shadow: var(--elevation-3);
-  width: 390px;
-  height: 578px;
+  width: 100%;
+  height: 100%;
 }
 .ellipse-div,
 .frame-item,
 .textbox1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
 }
 .textbox1 {
   border: 0;
   background-color: var(--grey);
   border-radius: var(--br-31xl);
-  width: 342px;
-  height: 50px;
+  width: 100%;
+  height: 85%;
 }
 .ellipse-div {
   border-radius: 50%;
@@ -57,18 +55,19 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 2px;
-  left: 294px;
-  width: 45px;
-  height: 45px;
+  bottom: 65%;
+  right: 0px;
+  width: 17%;
+  height: 17%;
 }
 .div28,
 .div29 {
   position: absolute;
-  top: 509px;
-  left: 24px;
-  width: 342px;
-  height: 50px;
+  width: 100%;
+  height: 15%;
+}
+.div28 {
+  bottom: 0px;
 }
 .div29 {
   top: 289px;
@@ -173,26 +172,13 @@
   height: 61px;
   font-size: var(--font-size-lg);
 }
-.div33,
 .frame-div {
   position: absolute;
   top: 266px;
-  left: 1px;
-  width: 390px;
-  height: 578px;
+  width: 100%;
+  height: 70%;
   font-size: var(--font-size-mini);
   font-family: var(--font-work-sans);
-}
-.div33 {
-  top: 36px;
-  left: 153px;
-  font-size: var(--font-size-41xl);
-  font-family: var(--font-dongle);
-  color: var(--color-forestgreen-100);
-  display: inline-block;
-  width: 83px;
-  height: 62px;
-  -webkit-text-stroke: 1px #00802b;
 }
 .group-child3 {
   position: absolute;
@@ -221,7 +207,6 @@
   height: 27px;
 }
 .frame-parent,
-.icon3,
 .image-9-parent {
   position: absolute;
   top: 15px;
@@ -229,18 +214,13 @@
   width: 307px;
   height: 111px;
 }
-.frame-parent,
-.icon3 {
+.frame-parent {
   top: 118px;
   left: 48px;
   height: 126px;
 }
 .icon3 {
-  top: 0;
-  left: 1px;
   border-radius: var(--br-5xl);
-  width: 391px;
-  height: 844px;
 }
 .p2 {
   margin: 0;
@@ -358,11 +338,7 @@
   height: 400px;
   overflow: hidden;
 }
-.div34 {
-  top: 0;
-  left: -1px;
-  width: 391px;
-  height: 844px;
+#overPopupScreen {
   font-size: var(--font-size-9xl);
   color: var(--color-gray-400);
   font-family: var(--font-mulish);
