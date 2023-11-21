@@ -1,4 +1,5 @@
-//이메일 입력하기 -> 인증요청 버튼 누르기 -> 인증번호 입력하면 맞는지 체크 -> 인증확인 버튼 누르면 넘어가기
+//이메일 입력하기(이미 있는 이메일이면 경고창) -> 인증요청 버튼 누르기 -> 인증번호 입력하면 맞는지 체크
+// -> 인증확인 버튼 누르면 넘어가기
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
