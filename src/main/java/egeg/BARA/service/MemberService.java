@@ -42,7 +42,7 @@
             // 이메일 인증 요청 시 인증 번호 Redis에 저장 ( key = "AuthCode " + Email / value = AuthCode )
 //            redisService.setValues(AUTH_CODE_PREFIX + toEmail, authCode);
             authCodeMap.put(toEmail, authCode); // HashMap에 이메일과 인증코드 저장
-            System.out.println("저장된 이메일: " + toEmail + ", 인증코드: " + authCodeMap.get(toEmail)); // 저장된 내용 확인 및 출력
+            System.out.println("authoCodeMAp: 저장된 이메일: " + toEmail + ", 인증코드: " + authCodeMap.get(toEmail)); // 저장된 내용 확인 및 출력
             System.out.println("인증번호 저장 완료!");
 //            redisService.setValues(AUTH_CODE_PREFIX + toEmail, authCode, Duration.ofMillis(this.authCodeExpirationMillis));
         }
@@ -64,6 +64,8 @@
 
         public boolean verifiedCode(String email, String authCode) {
             String storedAuthCode = authCodeMap.get(email);
+            System.out.println("----------------------------------------------------------");
+            System.out.println("String authCode: "+ authCode);
             System.out.println("조회한 이메일: " + email + ", 저장된 인증코드: " + storedAuthCode);
 
             return authCode.equals(storedAuthCode);
