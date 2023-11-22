@@ -1,7 +1,8 @@
 //이메일 입력하기(이미 있는 이메일이면 경고창) -> 인증요청 버튼 누르기 -> 인증번호 입력하면 맞는지 체크
 // -> 인증확인 버튼 누르면 넘어가기
-document.getElementById('emailVerify').addEventListener('submit', function(event) {
+document.getElementById('emailVerify').addEventListener('click', function(event) {
     event.preventDefault();
+
 
     var email = document.getElementById('inputEmail').value;
 
@@ -12,8 +13,12 @@ document.getElementById('emailVerify').addEventListener('submit', function(event
     }
 
     // 이메일 중복 확인 및 인증 코드 요청
-    fetch('http://localhost:8080/members/emails/verification-requests?email=' + email, {
-        method: 'POST'
+    fetch('http://localhost:8080/members/emails/verification-requests', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: email })
     })
         .then(response => {
             if (response.ok) {
@@ -52,7 +57,7 @@ function verifyCode() {
 
 // 이메일 형식 검증 함수
 function validateEmail(email) {
-    var pattern = /^[A-Z0-9._%+-]+@ewhain\.net$/;
+    var pattern = /^[A-Za-z0-9._%+-]+@ewhain\.net$/;
     return pattern.test(email);
 }
 

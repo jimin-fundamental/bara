@@ -1,17 +1,13 @@
     package egeg.BARA.service;
 
-    import egeg.BARA.domain.Member;
     import egeg.BARA.respository.MemberRepository;
     import jakarta.transaction.Transactional;
     import lombok.RequiredArgsConstructor;
-    import lombok.Value;
     import lombok.extern.slf4j.Slf4j;
     import org.springframework.stereotype.Service;
 
     import java.security.NoSuchAlgorithmException;
     import java.security.SecureRandom;
-    import java.time.Duration;
-    import java.util.Optional;
     import java.util.Random;
 
     @Slf4j
@@ -37,8 +33,14 @@
             String title = "BARA 이메일 인증 번호";
             String authCode = this.createCode();
             mailService.sendEmail(toEmail, title, authCode);
+            System.out.println("------------------");
+            System.out.println("email 보내기 성공, 인증 번호 저장 직전");
+            System.out.println("------------------");
             // 이메일 인증 요청 시 인증 번호 Redis에 저장 ( key = "AuthCode " + Email / value = AuthCode )
             redisService.setValues(AUTH_CODE_PREFIX + toEmail, authCode);
+            System.out.println("------------------");
+            System.out.println("인증번호 저장 완료!");
+            System.out.println("------------------");
 //            redisService.setValues(AUTH_CODE_PREFIX + toEmail, authCode, Duration.ofMillis(this.authCodeExpirationMillis));
         }
 
