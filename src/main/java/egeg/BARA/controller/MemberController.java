@@ -53,9 +53,20 @@
         @PostMapping("/emails/verification-requests")
         public ResponseEntity sendMessage(@RequestBody Map<String, String> request) {
             String email = request.get("email");
-            memberService.sendCodeToEmail(email); //인증코드 발송
+            //이메일이 이미 존재하면, 보내지 않음
+            Optional<Member> memberCheck = Optional.ofNullable(memberRepository.findByEmailId(email));
+            if (memberCheck.isPresent()) {
+                // 이메일이 이미 존재함
+                return ResponseEntity
+                        .badRequest()
+                        .body(Collections.singletonMap("error", "이미 가입한 이메일입니다."));
+            } else {
+                memberService.sendCodeToEmail(email); //인증코드 발송
+                return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
+            }
+
     
-            return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
+
         }
     
         @PostMapping("/emails/verifications") // 클라이언트로부터 email과 authCode (인증 코드)를 받습니다.
@@ -98,19 +109,10 @@
 
         @PostMapping("/signup2")
         //넘어온 이메일값으로 user 찾기 -> 해당 user table에 nickname과 비밀번호 등록
-        public ResponseEntity<Map<String, String>> signUp(@RequestBody Member member) {
-    
-    
-            if (member.getNickname() == null || member.getNickname().trim().isEmpty()) {
-                    return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Name is required"));
-    
-            }
-            if (member.getPassword() == null || member.getPassword().trim().isEmpty()) {
-                return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Password is required"));
-    
-            }
-    
+        public ResponseEntity<Map<String, String>> signUp2(@RequestBody Member member) {
+            //저장
             memberRepository.save(member);
+
             return ResponseEntity.ok(Collections.singletonMap("message", "User registered successfully"));
         }
     

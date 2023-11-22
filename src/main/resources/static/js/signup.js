@@ -10,6 +10,7 @@
             return;
         }
 
+
         // 이메일 중복 확인 및 인증 코드 요청
         fetch('http://localhost:8080/members/emails/verification-requests', {
             method: 'POST',
