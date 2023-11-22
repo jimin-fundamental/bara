@@ -29,9 +29,12 @@
 
 
         public void sendCodeToEmail(String toEmail) {
-    //        this.checkDuplicatedEmail(toEmail);
             String title = "BARA 이메일 인증 번호";
             String authCode = this.createCode();
+            System.out.println("------------------");
+            System.out.println("code create 완료: "+authCode);
+            System.out.println("------------------");
+            //여기까지 ㅇㅋ
             mailService.sendEmail(toEmail, title, authCode);
             System.out.println("------------------");
             System.out.println("email 보내기 성공, 인증 번호 저장 직전");
