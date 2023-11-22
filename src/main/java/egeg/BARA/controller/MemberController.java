@@ -75,8 +75,10 @@
     
         @PostMapping("/emails/verifications") // 클라이언트로부터 email과 authCode (인증 코드)를 받습니다.
         public ResponseEntity verificationEmail(@RequestBody Map<String, String> request) {
-            String email = request.get("email");
-            String authCode = request.get("authCode");
+            String email = request.get("email"); //이건 되는데
+            String authCode = request.get("authCode");//이건 안돼?
+            System.out.println("-----------------------------------------------------");
+            System.out.println("request에서 얻은 email: "+email+" & authCode: "+authCode);
 
             Map<String, Object> response = new HashMap<>();
     

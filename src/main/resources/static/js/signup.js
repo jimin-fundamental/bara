@@ -41,7 +41,7 @@
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email: email, code: authCode }) // 요청 본문에 이메일과 인증 코드 포함
+            body: JSON.stringify({ email: email, authCode: authCode }) // 요청 본문에 이메일과 인증 코드 포함
         })
             .then(response => response.json())
             .then(data => {
