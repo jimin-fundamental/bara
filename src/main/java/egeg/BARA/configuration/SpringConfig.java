@@ -1,28 +1,28 @@
-//package egeg.BARA.configuration;
-//
-//import egeg.BARA.respository.MemberRepository;
-//import egeg.BARA.service.MailService;
-//import egeg.BARA.service.MemberService;
-//import egeg.BARA.service.RedisService;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//
-//@Configuration
-//public class SpringConfig {
-//    private final MemberRepository memberRepository;
-//
-//
-//    //생성자 주입
-//    @Autowired
-//    public SpringConfig(MemberRepository memberRepository){
-//        this.memberRepository = memberRepository;
-//    }
-//
-//    @Bean
-//    public MemberService memberService(MailService mailService, RedisService redisService) {
-//        return new MemberService(memberRepository, mailService, redisService);
-//    }
-//
-//
-//}
+package egeg.BARA.configuration;
+
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
+import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
+
+@EnableWebSocketMessageBroker
+@Configuration
+public class SpringConfig implements WebSocketMessageBrokerConfigurer {
+
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        //stomp 접속 주소 url => /ws-stomp
+        registry.addEndpoint("/ws-stomp")
+                .withSockJS();
+    }
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry registry) {
+        //메세지를 구독하는 요청 url - 메세지 받을 때
+        registry.enableSimpleBroker("/sub");
+        //메세지 발행하는 요청 url - 메세지 보낼 때
+        registry.setApplicationDestinationPrefixes("/pub");
+    }
+}
