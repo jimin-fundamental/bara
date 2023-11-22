@@ -47,9 +47,13 @@
             .then(data => {
                 if (data.message === 'Email verification successful') {
                     console.log('Verification successful');
+                    //storage에 이메일 저장해서 다음 페이지에 로드되게
+                    // 이메일 저장
+                    sessionStorage.setItem('userEmail', email);
+
                     window.location.href = '/signup2'; // 인증 성공 시 다음 페이지로 이동
                 } else {
-                    alert(data.error);
+                    alert('인증번호가 일치하지 않습니다. 다시 입력해주세요.');
                 }
             })
             .catch((error) => {

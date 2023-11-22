@@ -35,12 +35,6 @@
             this.memberService = memberService;
         }
     
-        // Helper method to validate email format
-    //    private boolean validateEmail(String emailStr) {
-    //        Matcher matcher = VALID_EWHA_EMAIL_ADDRESS_REGEX.matcher(emailStr);
-    //        return matcher.find();
-    //    }
-    
         //회원가입과 로그인
         @PostMapping("/signup")
         public ResponseEntity<Map<String, String>> signUp(@RequestBody Member member) {
@@ -54,15 +48,6 @@
             memberRepository.save(member);//자동으로 구현되어 있음
             return ResponseEntity.ok(Collections.singletonMap("message", "User is identified successfully"));
         }
-    
-    //    @PostMapping("/emails/verification-requests/{email}")
-    //    public ResponseEntity sendMessage(@RequestParam("email") String email) {
-    //        memberService.sendCodeToEmail(email); //인증코드 발송
-    //
-    //        return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
-    //    }
-
-
 
         //mail
         @PostMapping("/emails/verification-requests")
@@ -75,8 +60,8 @@
     
         @PostMapping("/emails/verifications") // 클라이언트로부터 email과 authCode (인증 코드)를 받습니다.
         public ResponseEntity verificationEmail(@RequestBody Map<String, String> request) {
-            String email = request.get("email"); //이건 되는데
-            String authCode = request.get("authCode");//이건 안돼?
+            String email = request.get("email");
+            String authCode = request.get("authCode");
             System.out.println("-----------------------------------------------------");
             System.out.println("request에서 얻은 email: "+email+" & authCode: "+authCode);
 
@@ -92,12 +77,28 @@
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response); // 인증 실패 시, 에러 메시지와 함께 UNAUTHORIZED(401) 상태 코드를 반환합니다.
             }
         }
-    
-    
+
+        @PostMapping("/signup2/nickname")
+        public ResponseEntity signUpNickname(@RequestBody Map<String, String> request) {
+            String nickname = request.get("nickname");
+            //닉네임 중복 확인
+            Optional<Member> memberOptional = memberRepository.findByNickname(nickname);
+            if (memberOptional.isPresent()) {
+                // 닉네임이 이미 존재함
+                return ResponseEntity
+                        .badRequest()
+                        .body(Collections.singletonMap("error", "이미 존재하는 닉네임입니다."));
+            } else {
+                // 사용 가능한 닉네임
+                return ResponseEntity
+                        .ok(Collections.singletonMap("message", "사용 가능한 닉네임입니다!"));
+            }
+
+        }
+
         @PostMapping("/signup2")
         //넘어온 이메일값으로 user 찾기 -> 해당 user table에 nickname과 비밀번호 등록
-        public ResponseEntity<Map<String, String>> signUp2(@RequestBody Member member) {
-            //넘어온 이메일값으로 user 찾기
+        public ResponseEntity<Map<String, String>> signUp(@RequestBody Member member) {
     
     
             if (member.getNickname() == null || member.getNickname().trim().isEmpty()) {
