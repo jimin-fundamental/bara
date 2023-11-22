@@ -46,32 +46,55 @@
 .div53 {
   top: 47.18%;
 }
-.div54,
-.user-07b-icon {
+
+.bangjang {
   position: absolute;
-  top: 69.23%;
-  left: 34.55%;
+  bottom: 5%;
+  display: flex;
+  height: 40px;
+  width: 140px;
+
+  justify-content: space-between;
+  align-items: center;
 }
+
 .user-07b-icon {
-  top: 120px;
-  left: 32px;
   border-radius: var(--br-81xl);
   width: 40px;
   height: 40px;
   overflow: hidden;
+  float: left;
+  margin-left: 10px;
 }
-.frame-inner {
+
+.div54 {
+  float: right;
+  font-size: 15px;
+}
+.roomDiv {
+    position: relative;
+    width: 85%;
+    height: 50%;
+    margin-top: 30%;
+}
+.room {
   cursor: pointer;
   border: 1px solid var(--grey);
   padding: 0;
   background-color: var(--color-silver-100);
   position: absolute;
-  top: 12.5px;
-  left: calc(50% - 96.5px);
   border-radius: var(--br-6xl);
   box-sizing: border-box;
   width: 156px;
   height: 153.2px;
+}
+#room1 {
+  top: 0%;
+  left: 0%;
+}
+#room2 {
+    top: 0%;
+    right: 0%;
 }
 .stamp-icon {
   position: absolute;
@@ -108,8 +131,6 @@
   overflow: hidden;
 }
 .magam {
-  top: 13px;
-  left: 14px;
   border-radius: var(--br-6xl);
   background-color: var(--color-gainsboro-300);
   width: 155px;
@@ -120,31 +141,21 @@
   color: var(--color-tomato-100);
   font-family: var(--font-jua);
 }
-.parent1 {
-  top: 282px;
-  left: 204px;
-  width: 220px;
-  height: 195px;
-}
+
 .stamp-icon1 {
   height: 98.35%;
   width: 88.82%;
-  top: 0.87%;
   right: 5.82%;
   bottom: 0.78%;
-  left: 5.36%;
   max-width: 100%;
   max-height: 100%;
 }
 .magam1,
 .parent2,
 .stamp-icon1 {
-  position: absolute;
   overflow: hidden;
 }
 .magam1 {
-  top: 13px;
-  left: 14px;
   border-radius: var(--br-6xl);
   background-color: var(--color-gainsboro-300);
   width: 155px;
