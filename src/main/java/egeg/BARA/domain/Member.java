@@ -64,6 +64,14 @@ public class Member {
         this.password = password;
     }
 
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
     //    @JsonManagedReference(value="d_user")
 //    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 //    private Set<Diary> diaries = new HashSet<>();
