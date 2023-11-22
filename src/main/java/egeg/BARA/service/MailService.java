@@ -52,15 +52,15 @@ public class MailService {
         }
     }
 
-    // 발신할 이메일 데이터 세팅(수신자, 제목, 들어갈 내용)
-    private SimpleMailMessage createEmailForm(String toEmail, String title, String text) {
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom(fromAddress); // 발신자 이메일 주소 설정
-        message.setReplyTo(toEmail);
-        message.setSentDate(new Date());
-        message.setSubject(title);
-        message.setText(text);
-
-        return message;
-    }
+//    // 발신할 이메일 데이터 세팅(수신자, 제목, 들어갈 내용)
+//    private SimpleMailMessage createEmailForm(String toEmail, String title, String text) {
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setFrom(fromAddress); // 발신자 이메일 주소 설정
+//        message.setReplyTo(toEmail);
+//        message.setSentDate(new Date());
+//        message.setSubject(title);
+//        message.setText(text);
+//
+//        return message;
+//    }
 }

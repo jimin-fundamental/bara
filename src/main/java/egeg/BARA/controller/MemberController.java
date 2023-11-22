@@ -68,16 +68,16 @@
         @PostMapping("/emails/verification-requests")
         public ResponseEntity sendMessage(@RequestBody Map<String, String> request) {
             String email = request.get("email");
-            System.out.println("------------------");
-            System.out.println("PostMapping 성공! email 보내지기 직전"); //여기까지만 실행되고 이메일 전송이 안되는군
-            System.out.println("------------------");
             memberService.sendCodeToEmail(email); //인증코드 발송
     
             return new ResponseEntity<>(HttpStatus.OK); //이메일 인증 코드 발송되면, HTTP 상태 코드 OK(200)를 반환
         }
     
-        @GetMapping("/emails/verifications") // 클라이언트로부터 email과 authCode (인증 코드)를 받습니다.
-        public ResponseEntity<Map<String, Object>> verificationEmail(@RequestParam("email") String email, @RequestParam("code") String authCode) {
+        @PostMapping("/emails/verifications") // 클라이언트로부터 email과 authCode (인증 코드)를 받습니다.
+        public ResponseEntity verificationEmail(@RequestBody Map<String, String> request) {
+            String email = request.get("email");
+            String authCode = request.get("authCode");
+
             Map<String, Object> response = new HashMap<>();
     
             boolean isCodeValid = memberService.verifiedCode(email, authCode); // 이메일과 코드의 유효성을 검증합니다.
