@@ -20,4 +20,8 @@ public class ViewController {
         return "join2";
     }
 
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
 }
