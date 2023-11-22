@@ -1,5 +1,6 @@
 package egeg.BARA.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +26,11 @@ public class Member {
 
     @Column(nullable = false)
     private String password;
+
+    @ManyToOne
+    @JoinColumn(name = "room_id")
+    @JsonBackReference
+    private Room room; // 사용자의 방 정보
 
     public Long getId() {
         return id;
