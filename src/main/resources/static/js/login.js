@@ -1,16 +1,17 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginbtn').addEventListener('click', function(event) {
     event.preventDefault();
+    console.log('login 버튼이 클릭됨!')
 
-    var name = document.getElementById('name').value;
-    var password = document.getElementById('password').value;
+    var emailId = document.getElementById('inputEmail').value;
+    var password = document.getElementById('inputPw').value;
 
 
-    fetch('http://localhost:8080/users/login', {
+    fetch('http://localhost:8080/members/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({name: name, password: password})
+        body: JSON.stringify({emailId: emailId, password: password})
     })
         .then(response => response.json())
         .then(data => {
@@ -19,11 +20,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             } else {
                 console.log('Login Completed');
                 // Save user id to local storage
-                localStorage.setItem('userId', data.userId);
+                localStorage.setItem('emailId', data.emailId);
 
-                console.log(JSON.stringify({name: name, password: password}));
+                console.log(JSON.stringify({emailId: inputEmail, password: inputPw}));
                 alert(data.message);
-                window.location.href = '/process';
+                window.location.href = '/home';
             }
         })
         .catch((error) => {
@@ -31,12 +32,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         });
 });
 
-function loginPopup() {
-    var popup = document.getElementById("login__bg");
-    popup.classList.add("show");
-}
-
-function loginPopdown() {
-    var popup = document.getElementById("login__bg");
-    popup.classList.remove("show");
-}
+// function loginPopup() {
+//     var popup = document.getElementById("login__bg");
+//     popup.classList.add("show");
+// }
+//
+// function loginPopdown() {
+//     var popup = document.getElementById("login__bg");
+//     popup.classList.remove("show");
+// }
