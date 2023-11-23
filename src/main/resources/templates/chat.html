@@ -1,142 +1,171 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
 
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/chat.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jua:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="screen" id="chatforParticipantScreen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <div class="chat-header">
+    <link rel="stylesheet" href="/css/global.css"/>
+    <link rel="stylesheet" href="/css/chat.css"/>
+
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Work Sans:wght@700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@600&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Jua:wght@400&display=swap"
+    />
+</head>
+<body>
+<div class="screen" id="chatforParticipantScreen">
+    <div class="chat-header">
         <div class="div3">바라</div>
-        <b class="b">배달 완료</b>
-        <div class="div4">
-          <div class="child"></div>
-          <img class="icon" alt="" src="/public/icon.svg" />
+        <a href="http://localhost:8080/home">
+            <button id = "bedalComplete" type = "button">
+            <div class="div4">
+                <b class="b">배달 완료</b>
+                <div class="child">
+                    <img class="icon" alt="" src="/public/icon.svg"/>
+                </div>
+            </div>
+        </button>
+        </a>
+
+        <button id="singo" type = "button">
+            <div class="div5">
+                <b class="b1">신고</b>
+                <div class="item"></div>
+            </div>
+            <img class="icon1" alt="" src="/public/icon1.svg"/>
+        </button>
+
+
+        <div class="div10" id="account">
+            <div class="rectangle-group">
+                <div class="group-child"></div>
+                <div class="group-item"></div>
+            </div>
+            <b class="b3">계좌번호 : 신한 111-00000</b>
+            <img
+                    class="interface-essentialbookmark-icon"
+                    alt=""
+                    src="/public/interface-essentialbookmark.svg"
+            />
         </div>
-        <div class="div5">
-          <b class="b1">신고</b>
-          <div class="item"></div>
-        </div>
-        <img class="icon1" alt="" src="/public/icon1.svg" />
-<!--        계좌번호-->
-        <div class="div10">
-          <div class="rectangle-group">
-            <div class="group-child"></div>
-            <div class="group-item"></div>
-          </div>
-          <b class="b3">계좌번호 : 신한 111-00000</b>
-          <b class="b3">계좌번호 : 신한 111-00000</b>
-          <img
-                  class="interface-essentialbookmark-icon"
-                  alt=""
-                  src="/public/interface-essentialbookmark.svg"
-          />
-        </div>
-      </div>
+    </div>
+    <div id="chat-page" class="hidden">
+        <div class="chat-container">
+            <!-- <div class="frame-child"></div>-->
+            <ul id="messageArea">
+                <!--Thymeleaf 사용 없이, Socket.js를 통해 동적으로 메시지를 여기에 추가-->
+<!--                <div class="div7" id="myChat"></div>-->
+<!--                <div class="div8">-->
+<!--                    <div class="rectangle-div" id="otherChat"></div>-->
+<!--                    <div class="div9">-->
+<!--                        <b class="b2">참여자 1</b>-->
+<!--                        <div class="child1"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </ul>
 
+            <form id="messageForm" name="messageForm" nameForm="messageForm">
+                <div class="form-group">
+                    <div class="input-group clearfix">
+                        <input class="text" name="message" id="message" type="text" autocomplete="off"/>
+                        <button class="button" id="sendBtn" type=submit>
+                            <div class="inner"></div>
+                            <img class="send-icon" alt="" src="/public/send.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </form>
 
-<!--      얘가 messageArea-->
-      <div class="rectangle-parent">
-        <div class="frame-child"></div>
-
-        <form id="messageForm" name="messageForm" nameForm="messageForm"></form>
-          <!--입력창의 class="input-group clearfix" "form group"-->
-          <div class="div6">
-
-            <!--          class="form-control"-->
-            <input class="textbox" name="message" id="message" type="text" autocomplete="off" />
-
-            <button class="button" id="sendBtn" type = submit>
-              <div class="inner"></div>
-              <img class="send-icon" alt="" src="/public/send.svg" />
-            </button>
-
-          </div>
-        </form>
-
-        <div class="div7" id="myChat"></div>
-        <div class="div8">
-          <div class="rectangle-div" id="otherChat"></div>
-          <div class="div9">
-            <b class="b2">참여자 1</b>
-            <div class="child1"></div>
-          </div>
         </div>
 
-      </div>
+        <!--      <button class="arrow-back-ios" id="backBtn">-->
+        <!--        <img class="vector-icon" alt="" src="/public/vector.svg" />-->
 
-<!--      <button class="arrow-back-ios" id="backBtn">-->
-<!--        <img class="vector-icon" alt="" src="/public/vector.svg" />-->
+        <!--        <img class="vector-icon1" alt="" src="/public/vector1.svg" />-->
+        <!--      </button>-->
 
-<!--        <img class="vector-icon1" alt="" src="/public/vector1.svg" />-->
-<!--      </button>-->
-
-      <div class="div11" id="reportPopupScreen">
-        <img class="icon2" alt="" src="/public/.svg" />
+    </div>
+    <div class="div11" id="reportPopupScreen">
+        <img class="icon2" alt="" src="/public/.svg"/>
 
         <div class="div12">
-          <b class="b5">
-            <p class="p">정말 방장을</p>
-            <p class="p">신고하시겠어요?</p>
-          </b>
-          <button class="button1" id="reportCancelBtn">
-            <div class="child2"></div>
-            <div class="div13">취소</div>
-          </button>
-          <button class="button2" id="reportConfirmBtn">
-            <div class="child3"></div>
-            <div class="div14">확인</div>
-          </button>
-          <button class="x" id="xBtn">
-            <div class="x1">X</div>
-            <div class="x-child"></div>
-          </button>
+            <b class="b5">
+                <p class="p">정말 방장을</p>
+                <p class="p">신고하시겠어요?</p>
+            </b>
+            <button class="button1" id="reportCancelBtn">
+                <div class="child2"></div>
+                <div class="div13">취소</div>
+            </button>
+            <button class="button2" id="reportConfirmBtn">
+                <div class="child3"></div>
+                <div class="div14">확인</div>
+            </button>
+            <button class="x" id="xBtn">
+                <div class="x1">X</div>
+                <div class="x-child"></div>
+            </button>
         </div>
-      </div>
     </div>
-  </body>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/Socket.js"></script>
+
+<script>
+    // 'singo' 버튼 클릭 이벤트 리스너 추가
+    document.getElementById('singo').addEventListener('click', function() {
+        var reportPopup = document.getElementById('reportPopupScreen');
+        reportPopup.style.display = 'block'; // 팝업을 보이게 변경
+    });
+</script>
+</body>
 </html>

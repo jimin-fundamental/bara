@@ -1,14 +1,51 @@
-.div11 {
+#reportPopupScreen {
   display: none;
 }
+
+/*채팅메세지표시영역*/
+#messageArea {
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f4f4f4; /* 배경색 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  margin: 10px;
+  max-height: 400px; /* 최대 높이 */
+}
+
+#messageForm {
+  display: flex;
+  padding: 10px;
+  background-color: white; /* 배경색 */
+  border-top: 1px solid #ddd; /* 상단 테두리 */
+}
+
+#messageForm .input-group {
+  width: 100%;
+}
+
+#messageForm input[type="text"] {
+  flex: 1; /* 입력 필드가 남은 공간을 모두 차지 */
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+#messageForm button {
+  background-color: #128ff2; /* 버튼 색상 */
+  color: white; /* 글자 색상 */
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
 
 .b,
 .div3 {
   display: inline-block;
 }
 .div3 {
+  z-index: 10;
   position: absolute;
-  top: 36px;
+  top: 60px;
   left: 153px;
   font-size: var(--font-size-41xl);
   font-family: var(--font-dongle);
@@ -17,17 +54,33 @@
   height: 62px;
   -webkit-text-stroke: 1px #00802b;
 }
-.b {
-  top: 218px;
-  left: 0;
-  width: 322px;
-  height: 27px;
+.b1,
+.b{
+  top: 70px;
+  left:-10px;
 }
+
+.b1,
+.div4,
+.item {
+  position: absolute;
+}
+
 .b,
 .child,
 .icon {
   position: absolute;
 }
+.b1 {
+  display: inline-block;
+  width: 98px;
+  height: 27px;
+}
+.b {
+  width: 322px;
+  height: 27px;
+}
+
 .child {
   top: 0;
   left: 0;
@@ -49,18 +102,7 @@
   width: 282px;
   height: 75px;
 }
-.b1,
-.div4,
-.item {
-  position: absolute;
-}
-.b1 {
-  top: 88px;
-  left: 0;
-  display: inline-block;
-  width: 98px;
-  height: 27px;
-}
+
 .item {
   top: 0;
   left: 20px;
@@ -93,12 +135,12 @@
 }
 .frame-child,
 .inner,
-.textbox {
+.text {
   position: absolute;
   top: 0;
   left: 0;
 }
-.textbox {
+.text {
   border: 0;
   background-color: var(--grey);
   border-radius: var(--br-31xl);
@@ -130,7 +172,7 @@
   width: 45px;
   height: 45px;
 }
-.div6,
+.form-group,
 .div7 {
   position: absolute;
   top: 509px;
@@ -235,13 +277,14 @@
   height: 40px;
 }
 .div10 {
+  z-index: 1;
   top: 0;
   left: -6px;
   width: 396px;
   height: 61px;
   font-size: var(--font-size-lg);
 }
-.rectangle-parent {
+.chat-container {
   position: absolute;
   top: 266px;
   left: 1px;
