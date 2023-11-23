@@ -18,8 +18,8 @@ public class ChatRoomController {
     private ChatService chatService;
 
     // 채팅 리스트 화면
-    // /chat 로 요청이 들어오면 전체 채팅룸 리스트를 담아서 return
-    @GetMapping("/chat")
+    // / 로 요청이 들어오면 전체 채팅룸 리스트를 담아서 return
+    @GetMapping("/")
     public String goChatRoom(Model model){
 
         model.addAttribute("list", chatService.findAllRoom());

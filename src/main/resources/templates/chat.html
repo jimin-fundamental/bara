@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/makeRoom.css" />
+    <link rel="stylesheet" href="/css/chat.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap"
@@ -49,36 +49,20 @@
   </head>
   <body>
     <div class="screen" id="chatforParticipantScreen">
-      <div class="div3">바라</div>
-      <b class="b">배달 완료</b>
-      <div class="div4">
-        <div class="child"></div>
-        <img class="icon" alt="" src="/public/icon.svg" />
-      </div>
-      <div class="div5">
-        <b class="b1">신고</b>
-        <div class="item"></div>
-      </div>
-      <img class="icon1" alt="" src="/public/icon1.svg" />
 
-      <div class="rectangle-parent">
-        <div class="frame-child"></div>
-        <div class="div6">
-          <input class="textbox" name="inputChat" id="inputChat" type="text" />
-
-          <button class="button" id="sendBtn">
-            <div class="inner"></div>
-            <img class="send-icon" alt="" src="/public/send.svg" />
-          </button>
+      <div class="chat-header">
+        <div class="div3">바라</div>
+        <b class="b">배달 완료</b>
+        <div class="div4">
+          <div class="child"></div>
+          <img class="icon" alt="" src="/public/icon.svg" />
         </div>
-        <div class="div7" id="myChat"></div>
-        <div class="div8">
-          <div class="rectangle-div" id="otherChat"></div>
-          <div class="div9">
-            <b class="b2">참여자 1</b>
-            <div class="child1"></div>
-          </div>
+        <div class="div5">
+          <b class="b1">신고</b>
+          <div class="item"></div>
         </div>
+        <img class="icon1" alt="" src="/public/icon1.svg" />
+<!--        계좌번호-->
         <div class="div10">
           <div class="rectangle-group">
             <div class="group-child"></div>
@@ -87,17 +71,50 @@
           <b class="b3">계좌번호 : 신한 111-00000</b>
           <b class="b3">계좌번호 : 신한 111-00000</b>
           <img
-            class="interface-essentialbookmark-icon"
-            alt=""
-            src="/public/interface-essentialbookmark.svg"
+                  class="interface-essentialbookmark-icon"
+                  alt=""
+                  src="/public/interface-essentialbookmark.svg"
           />
         </div>
       </div>
-      <button class="arrow-back-ios" id="backBtn">
-        <img class="vector-icon" alt="" src="/public/vector.svg" />
 
-        <img class="vector-icon1" alt="" src="/public/vector1.svg" />
-      </button>
+
+<!--      얘가 messageArea-->
+      <div class="rectangle-parent">
+        <div class="frame-child"></div>
+
+        <form id="messageForm" name="messageForm" nameForm="messageForm"></form>
+          <!--입력창의 class="input-group clearfix" "form group"-->
+          <div class="div6">
+
+            <!--          class="form-control"-->
+            <input class="textbox" name="message" id="message" type="text" autocomplete="off" />
+
+            <button class="button" id="sendBtn" type = submit>
+              <div class="inner"></div>
+              <img class="send-icon" alt="" src="/public/send.svg" />
+            </button>
+
+          </div>
+        </form>
+
+        <div class="div7" id="myChat"></div>
+        <div class="div8">
+          <div class="rectangle-div" id="otherChat"></div>
+          <div class="div9">
+            <b class="b2">참여자 1</b>
+            <div class="child1"></div>
+          </div>
+        </div>
+
+      </div>
+
+<!--      <button class="arrow-back-ios" id="backBtn">-->
+<!--        <img class="vector-icon" alt="" src="/public/vector.svg" />-->
+
+<!--        <img class="vector-icon1" alt="" src="/public/vector1.svg" />-->
+<!--      </button>-->
+
       <div class="div11" id="reportPopupScreen">
         <img class="icon2" alt="" src="/public/.svg" />
 
