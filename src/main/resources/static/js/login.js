@@ -20,9 +20,9 @@ document.getElementById('loginbtn').addEventListener('click', function(event) {
             } else {
                 console.log('Login Completed');
                 // Save user id to local storage
-                localStorage.setItem('emailId', data.emailId);
+                localStorage.setItem('emailId', emailId);
 
-                console.log(JSON.stringify({emailId: inputEmail, password: inputPw}));
+                console.log(JSON.stringify({emailId: emailId, password: password}));
                 alert(data.message);
                 window.location.href = '/home';
             }
