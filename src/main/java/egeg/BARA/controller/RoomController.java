@@ -20,7 +20,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
 
-@Controller
 @RestController
 @RequestMapping("/rooms")
 public class RoomController {
@@ -36,21 +35,34 @@ public class RoomController {
 
     @PostMapping("/createRoom")
     public ResponseEntity<Map<String, String>> createRoom(@RequestBody Room room) {
-        if (room.getFood() == null || room.getPlace() == null || room.getTimeLimit() == null || room.getMinPeople() == null) {
+        System.out.println("Received request with room: " + room);
+        if (room.getFood() == null || room.getPlace() == null || room.getMinPeople() == null) {
             return ResponseEntity.badRequest().body(Collections.singletonMap("error", "폼을 모두 작성해 주세요!"));        }
-        if (roomRepository.findByMember((Member) room.getMembers()) != null) {
+
+        // 이메일 정보만 있는 객체를 받아서 멤버를 찾거나 생성하여 추가
+        String memberEmail = room.getMembers().get(0).getEmailId();
+        System.out.println(memberEmail);
+        Member member = memberRepository.findByEmailId(memberEmail);
+
+        if (member == null) {
+            return ResponseEntity.badRequest().body(Collections.singletonMap("error", "방장을 찾을 수 없습니다."));
+        }
+
+        if (roomRepository.findByMembers(member) != null) {
             return ResponseEntity.badRequest().body(Collections.singletonMap("error", "이미 다른 방에 참여하고 있습니다."));
         }
 
-        roomRepository.save(room); // 방 저장
+        // 방 저장
+        room.getMembers().clear(); // 이메일 정보만으로 멤버 추가하므로 기존 멤버 정보 제거
+        room.getMembers().add(member);
+        roomRepository.save(room);
 
         // 총대에게 방 연결
-        long leaderId = ((Member) room.getMembers()).getId();
+        long leaderId = member.getId();
         Member leader = memberRepository.findById(leaderId).orElseThrow(
                 () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
 
         leader.setRoom(room);
-
 
         return ResponseEntity.ok(Collections.singletonMap("message", "방 생성 완료!"));
     }

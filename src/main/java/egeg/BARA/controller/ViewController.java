@@ -29,4 +29,9 @@ public class ViewController {
     public String chat(){
         return "chat";
     }
+
+    @GetMapping("/createRoom")
+    public String makeRoom(){
+        return "makeRoom";
+    }
 }

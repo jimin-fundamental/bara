@@ -1,5 +1,6 @@
 package egeg.BARA.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,7 +31,8 @@ public class Room {
     @Column(nullable = false)
     private Integer minPeople; // 최소 인원
 
-    @Column(nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @Column
     private LocalDateTime timeLimit; // 마감 시간
 
     @Column(nullable = false)

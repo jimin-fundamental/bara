@@ -49,8 +49,7 @@
   </head>
   <body>
     <div class="screen" id="roommakingScreen">
-      <div class="div16">방 만들기</div>
-      <button class="arrow-back-ios1" id="backBtn">
+      <button class="arrow-back-ios1" id="backBtn" type="button">
         <img class="vector-icon2" alt="" src="/public/vector.svg" />
 
         <img class="vector-icon3" alt="" src="/public/vector1.svg" />
@@ -81,8 +80,8 @@
         <div class="div20">한 줄 설명(선택)</div>
         <input
           class="input1"
-          name="inputDesctiption"
-          id="inputDesctiption"
+          name="inputDescription"
+          id="inputDescription"
           placeholder="입력해주세요"
           type="text"
         />
@@ -98,10 +97,6 @@
 
         <div class="div21">배부 장소</div>
       </div>
-      <button class="rectangle-container" id="createRoom">
-        <div class="group-inner"></div>
-        <div class="div22">방 만들기</div>
-      </button>
       <section class="group-section" id="dueTime">
         <div class="div23">마감시간</div>
         <div class="hours-parent">
@@ -130,15 +125,20 @@
         </div>
       </section>
       <div class="group-div">
-        <button class="button3" id="plusBtn">+</button>
-        <button class="button4" id="minusBtn">-</button>
+        <button class="button3" id="plusBtn" type="button">+</button>
+        <button class="button4" id="minusBtn" type="button">-</button>
         <div class="div24">
           <div class="input-light2">
-            <strong class="strong" id="numberOfMembers">0</strong>
+            <input class="strong" type="text" id="inputminPeople"></input>
           </div>
         </div>
         <div class="div25">최소주문인원</div>
       </div>
     </div>
+    <button class="rectangle-container" id="createRoom" type="button">
+      <div class="group-inner"></div>
+      <div class="div22">방 만들기</div>
+    </button>
   </body>
+  <script src="/js/makeRoom.js"></script>
 </html>
