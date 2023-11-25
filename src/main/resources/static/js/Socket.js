@@ -7,9 +7,9 @@ document.write("<script\n" +
     "  crossorigin=\"anonymous\"></script>")
 
 
-var usernamePage = document.querySelector('#username-page');
+// var usernamePage = document.querySelector('#username-page');
 var chatPage = document.querySelector('#chat-page');
-var usernameForm = document.querySelector('#usernameForm');
+// var usernameForm = document.querySelector('#usernameForm');
 var messageForm = document.querySelector('#messageForm');
 var messageInput = document.querySelector('#message');
 var messageArea = document.querySelector('#messageArea');
@@ -35,7 +35,7 @@ function connect(event) {
 
     // usernamePage 에 hidden 속성 추가해서 가리고
     // chatPage 를 등장시킴
-    usernamePage.classList.add('hidden');
+    // usernamePage.classList.add('hidden');
     chatPage.classList.remove('hidden');
 
     // 연결하고자하는 Socket 의 endPoint
@@ -190,5 +190,5 @@ function getAvatarColor(messageSender) {
     return colors[index];
 }
 
-usernameForm.addEventListener('submit', connect, true)
+// usernameForm.addEventListener('submit', connect, true)
 messageForm.addEventListener('submit', sendMessage, true)
