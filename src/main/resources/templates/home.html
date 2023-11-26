@@ -142,10 +142,23 @@
           <div class="div65">마이페이지</div>
         </button>
       </div>
-        <button class="arrow-back-ios6" id="backBtn" type="button">
-          <img class="vector-icon24" alt="" src="/public/vector.svg" />
-          <img class="vector-icon25" alt="" src="/public/vector1.svg" />
-        </button>
+<!--        <button class="arrow-back-ios6" id="backBtn" type="button">-->
+<!--          <img class="vector-icon24" alt="" src="/public/vector.svg" />-->
+<!--          <img class="vector-icon25" alt="" src="/public/vector1.svg" />-->
+<!--        </button>-->
     </div>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 'createRoom' ID를 가진 버튼을 선택
+      var createRoomButton = document.querySelector('#createRoom');
+
+      createRoomButton.addEventListener('click', function() {
+        // '/chat/createroom'으로 리디렉션
+        window.location.href = '/chat/createroom';
+      });
+    });
+  </script>
+
+
 </html>

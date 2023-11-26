@@ -25,17 +25,17 @@ public class ViewController {
         return "home";
     }
 
-    @GetMapping("/chatRoom")
-    public String chatRoom() {
-        return "chatRoom";
-    }
-
-
-
-    @GetMapping("/chat")
-    public String chat(){
-        return "chat";
-    }
+//    @GetMapping("/chatRoom")
+//    public String chatRoom() {
+//        return "chatRoom";
+//    }
+//
+//
+//
+//    @GetMapping("/chat")
+//    public String chat(){
+//        return "chat";
+//    }
 
 //    @GetMapping("/chatBandjang")
 //    public String chatBandjang(){

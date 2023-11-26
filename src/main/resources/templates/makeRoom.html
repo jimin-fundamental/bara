@@ -66,7 +66,9 @@
 
         <div class="div17">원하는 음식 / 음식점</div>
       </div>
+
       <div class="div18">바라</div>
+
       <div class="parent">
         <div class="div17">계좌번호</div>
         <input
@@ -77,6 +79,7 @@
           type="text"
         />
       </div>
+
       <div class="group">
         <div class="div20">한 줄 설명(선택)</div>
         <input
@@ -87,6 +90,7 @@
           type="text"
         />
       </div>
+
       <div class="container">
         <input
           class="food"
@@ -98,10 +102,26 @@
 
         <div class="div21">배부 장소</div>
       </div>
-      <button class="rectangle-container" id="createRoom">
-        <div class="group-inner"></div>
-        <div class="div22">방 만들기</div>
-      </button>
+
+      <form action="/chat/createroom" method="post" onsubmit="return createRoom()">
+        <input
+                type="hidden"
+                name="name"
+                id="inputRoomName"
+                value="기본방이름" <!-- 여기에 적절한 방 이름을 넣어주세요 -->
+        />
+        <button class="rectangle-container" id="createRoom" type="submit">
+          <div class="group-inner"></div>
+          <div class="div22">방 만들기</div>
+        </button>
+      </form>
+
+
+<!--      <button class="rectangle-container" id="createRoom">-->
+<!--        <div class="group-inner"></div>-->
+<!--        <div class="div22">방 만들기</div>-->
+<!--      </button>-->
+
       <section class="group-section" id="dueTime">
         <div class="div23">마감시간</div>
         <div class="hours-parent">

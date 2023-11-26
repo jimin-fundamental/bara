@@ -19,23 +19,29 @@ public class ChatRoomController {
 
     // 채팅 리스트 화면
     // / 로 요청이 들어오면 전체 채팅룸 리스트를 담아서 return
-    @GetMapping("/")
+    @GetMapping("/chat")
     public String goChatRoom(Model model){
 
         model.addAttribute("list", chatService.findAllRoom());
 //        model.addAttribute("user", "hey");
         log.info("SHOW ALL ChatList {}", chatService.findAllRoom());
-        return "chat";
+        return "home";
+    }
+
+    @GetMapping("/chat/createroom")
+    public String makeRoom(){
+        return "makeRoom";
     }
 
     // 채팅방 생성
     // 채팅방 생성 후 chatroom으로 입장
+    //클라이언트는 name 파라미터를 포함하는 POST 요청을 /chat/createroom 경로로 보내야 됨.
     @PostMapping("/chat/createroom")
     public String createRoom(@RequestParam String name, RedirectAttributes rttr) {
         ChatRoom room = chatService.createChatRoom(name);
         log.info("CREATE Chat Room {}", room);
         rttr.addFlashAttribute("roomName", room);
-        return "chat";
+        return "redirect:/chat";
     }
 
     // 채팅방 입장 화면
@@ -46,7 +52,7 @@ public class ChatRoomController {
 
         log.info("roomId {}", roomId);
         model.addAttribute("room", chatService.findRoomById(roomId));
-        return "chat";
+        return "room";
     }
 
 }

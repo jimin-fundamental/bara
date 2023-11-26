@@ -1,5 +1,4 @@
 'use strict';
-
 // document.write("<script src='jquery-3.6.1.js'></script>")
 document.write("<script\n" +
     "  src=\"https://code.jquery.com/jquery-3.6.1.min.js\"\n" +
@@ -23,15 +22,15 @@ var colors = [
     '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
 ];
 
-// roomId 파라미터 가져오기
-const url = new URL(location.href).searchParams;
-const roomId = url.get('roomId');
+// roomId 파라미터 가져오기 - 쿼리를 통해 roomId가 넘어와야 함
+const url = new URL(location.href).searchParams; //현재 페이지의 URL에서 쿼리 파라미터를 추출
+const roomId = url.get('roomId'); //URL에서 roomId라는 이름의 쿼리 파라미터의 값을 추출
 
 function connect(event) {
     username = document.querySelector('#name').value.trim();
 
     // username 중복 확인
-    isDuplicateName();
+    // isDuplicateName();
 
     // usernamePage 에 hidden 속성 추가해서 가리고
     // chatPage 를 등장시킴
@@ -66,28 +65,33 @@ function onConnected() {
         })
     )
 
-    connectingElement.classList.add('hidden');
+    // connectingElement.classList.add('hidden');
 
 }
+
+window.onload = function() {
+    connect();
+};
+
 
 // 유저 닉네임 중복 확인
-function isDuplicateName() {
-
-    $.ajax({
-        type: "GET",
-        url: "/chat/duplicateName",
-        data: {
-            "username": username,
-            "roomId": roomId
-        },
-        success: function (data) {
-            console.log("함수 동작 확인 : " + data);
-
-            username = data;
-        }
-    })
-
-}
+// function isDuplicateName() {
+//
+//     $.ajax({
+//         type: "GET",
+//         url: "/chat/duplicateName",
+//         data: {
+//             "username": username,
+//             "roomId": roomId
+//         },
+//         success: function (data) {
+//             console.log("함수 동작 확인 : " + data);
+//
+//             username = data;
+//         }
+//     })
+//
+// }
 
 // 유저 리스트 받기
 // ajax 로 유저 리스를 받으며 클라이언트가 입장/퇴장 했다는 문구가 나왔을 때마다 실행된다.
@@ -190,5 +194,7 @@ function getAvatarColor(messageSender) {
     return colors[index];
 }
 
+//여기서 connect을 쓰네. usernameform을 제출할 때, connect 함수 실행
+// = 폼을 통해 데이터를 입력하고 제출 버튼을 클릭하면 connect 함수가 호출되어 웹소켓 연결과 관련된 로직이 실행
 // usernameForm.addEventListener('submit', connect, true)
 messageForm.addEventListener('submit', sendMessage, true)
