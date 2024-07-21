@@ -8,3 +8,6 @@ Main feature is like below.
 - having chats between members
 
 <Project is still in progress>
+
+You can look up IR pitching document in below pdf. 
+[바라 ir 피칭 수정본 (2).pptx](https://github.com/user-attachments/files/16322955/ir.2.pptx)
