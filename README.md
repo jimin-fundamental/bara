@@ -40,22 +40,22 @@
 ### 🛠️ 기술 스택
 
 - **Environment**  
-  ![IntelliJ](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-orange?logo=intellij-idea&logoColor=white&style=for-the-badge)
-  ![Git](https://img.shields.io/badge/Version%20Control-Git-orange?logo=git&logoColor=white&style=for-the-badge)
-  ![GitHub](https://img.shields.io/badge/Repository-GitHub-orange?logo=github&logoColor=white&style=for-the-badge)
-  ![Figma](https://img.shields.io/badge/Design-Figma-purple?logo=figma&logoColor=white&style=for-the-badge)
+  ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-orange?style=for-the-badge&logo=intellij-idea&logoColor=white)
+  ![Git](https://img.shields.io/badge/Version%20Control-Git-orange?style=for-the-badge&logo=git&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/Repository-GitHub-orange?style=for-the-badge&logo=github&logoColor=white)
+  ![Figma](https://img.shields.io/badge/Design-Figma-purple?style=for-the-badge&logo=figma&logoColor=white)
 
 - **Languages**  
-  ![Java](https://img.shields.io/badge/Language-Java-blue?logo=java&logoColor=white&style=for-the-badge)
-  ![HTML](https://img.shields.io/badge/Language-HTML5-red?logo=html5&logoColor=white&style=for-the-badge)
-  ![CSS](https://img.shields.io/badge/Style-CSS3-blue?logo=css3&logoColor=white&style=for-the-badge)
-  ![JavaScript](https://img.shields.io/badge/Script-JavaScript-yellow?logo=javascript&logoColor=white&style=for-the-badge)
+  ![Java](https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java&logoColor=white)
+  ![HTML](https://img.shields.io/badge/Language-HTML5-red?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS](https://img.shields.io/badge/Style-CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/Script-JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=white)
 
 - **Frameworks & Libraries**  
-  ![Spring Boot](https://img.shields.io/badge/Framework-Spring%20Boot-brightgreen?logo=spring-boot&logoColor=white&style=for-the-badge)
-  ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql&logoColor=white&style=for-the-badge)
-  ![Gradle](https://img.shields.io/badge/Build-Gradle-blue?logo=gradle&logoColor=white&style=for-the-badge)
-  ![Lombok](https://img.shields.io/badge/Library-Lombok-red?logo=lombok&logoColor=white&style=for-the-badge)
+  ![Spring Boot](https://img.shields.io/badge/Framework-Spring%20Boot-brightgreen?style=for-the-badge&logo=spring-boot&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge&logo=mysql&logoColor=white)
+  ![Gradle](https://img.shields.io/badge/Build-Gradle-blue?style=for-the-badge&logo=gradle&logoColor=white)
+  ![Lombok](https://img.shields.io/badge/Library-Lombok-red?style=for-the-badge&logo=lombok&logoColor=white)
 
 ---
 
