@@ -200,6 +200,3 @@ Currently, this project is for personal learning and development, so external co
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-이 README 파일은 프로젝트의 공식성과 시각적 요소를 강조하여 구성되었습니다. 추가된 이미지와 함께 이 프로젝트의 목적과 기능을 더욱 명확하게 전달할 수 있습니다.
