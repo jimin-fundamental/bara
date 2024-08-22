@@ -30,10 +30,10 @@
 
 ### User Flow
 
-![User Flow](data:"C:\Users\mingk\OneDrive\바탕 화면\1.png")
-![User Flow](data:"C:\Users\mingk\OneDrive\바탕 화면\2.png")
-![Business Model](data:"C:\Users\mingk\OneDrive\바탕 화면\3.png")
-![Market Size](data:"C:\Users\mingk\OneDrive\바탕 화면\4.png")
+![User Flow]([data:"C:\Users\mingk\OneDrive\바탕 화면\1.png"](https://github.com/Kareeenn/bara/blob/main/images/1.png))
+![User Flow]([data:"C:\Users\mingk\OneDrive\바탕 화면\2.png"](https://github.com/Kareeenn/bara/blob/main/images/2.png))
+![Business Model]([data:"C:\Users\mingk\OneDrive\바탕 화면\3.png"](https://github.com/Kareeenn/bara/blob/main/images/3.png))
+![Market Size]([data:"C:\Users\mingk\OneDrive\바탕 화면\4.png"](https://github.com/Kareeenn/bara/blob/main/images/4.png))
 
 ---
 
@@ -118,11 +118,10 @@ The project is currently **in progress**, with ongoing feature additions. For mo
 
 ### User Flow
 
-![User Flow](data:"C:\Users\mingk\OneDrive\바탕 화면\1.png")
-![User Flow](data:"C:\Users\mingk\OneDrive\바탕 화면\2.png")
-![Business Model](data:"C:\Users\mingk\OneDrive\바탕 화면\3.png")
-![Market Size](data:"C:\Users\mingk\OneDrive\바탕 화면\4.png")
-
+![User Flow]([data:"C:\Users\mingk\OneDrive\바탕 화면\1.png"](https://github.com/Kareeenn/bara/blob/main/images/1.png))
+![User Flow]([data:"C:\Users\mingk\OneDrive\바탕 화면\2.png"](https://github.com/Kareeenn/bara/blob/main/images/2.png))
+![Business Model]([data:"C:\Users\mingk\OneDrive\바탕 화면\3.png"](https://github.com/Kareeenn/bara/blob/main/images/3.png))
+![Market Size]([data:"C:\Users\mingk\OneDrive\바탕 화면\4.png"](https://github.com/Kareeenn/bara/blob/main/images/4.png))
 
 ---
 
