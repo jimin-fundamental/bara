@@ -39,10 +39,23 @@
 
 ### 🛠️ 기술 스택
 
-- **프론트엔드**: HTML, CSS (Figma 디자인 변환)
-- **백엔드**: Java, Spring Boot
-- **데이터베이스**: MySQL
-- **기타 도구**: IntelliJ IDEA, Gradle, Lombok
+- **Environment**  
+  ![IntelliJ](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-orange?logo=intellij-idea&logoColor=white&style=for-the-badge)
+  ![Git](https://img.shields.io/badge/Version%20Control-Git-orange?logo=git&logoColor=white&style=for-the-badge)
+  ![GitHub](https://img.shields.io/badge/Repository-GitHub-orange?logo=github&logoColor=white&style=for-the-badge)
+  ![Figma](https://img.shields.io/badge/Design-Figma-purple?logo=figma&logoColor=white&style=for-the-badge)
+
+- **Languages**  
+  ![Java](https://img.shields.io/badge/Language-Java-blue?logo=java&logoColor=white&style=for-the-badge)
+  ![HTML](https://img.shields.io/badge/Language-HTML5-red?logo=html5&logoColor=white&style=for-the-badge)
+  ![CSS](https://img.shields.io/badge/Style-CSS3-blue?logo=css3&logoColor=white&style=for-the-badge)
+  ![JavaScript](https://img.shields.io/badge/Script-JavaScript-yellow?logo=javascript&logoColor=white&style=for-the-badge)
+
+- **Frameworks & Libraries**  
+  ![Spring Boot](https://img.shields.io/badge/Framework-Spring%20Boot-brightgreen?logo=spring-boot&logoColor=white&style=for-the-badge)
+  ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql&logoColor=white&style=for-the-badge)
+  ![Gradle](https://img.shields.io/badge/Build-Gradle-blue?logo=gradle&logoColor=white&style=for-the-badge)
+  ![Lombok](https://img.shields.io/badge/Library-Lombok-red?logo=lombok&logoColor=white&style=for-the-badge)
 
 ---
 
@@ -85,6 +98,8 @@
 이 프로젝트는 [MIT 라이선스](LICENSE) 하에 배포됩니다.
 
 ---
+---
+
 
 ## 📱 BARA - A Web Application for Ordering Food on Campus at Ewha Womans University
 
@@ -127,10 +142,23 @@ The project is currently **in progress**, with ongoing feature additions. For mo
 
 ### 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS (converted from Figma design)
-- **Backend**: Java, Spring Boot
-- **Database**: MySQL
-- **Tools**: IntelliJ IDEA, Gradle, Lombok
+- **Environment**  
+  ![IntelliJ](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-orange?logo=intellij-idea&logoColor=white&style=for-the-badge)
+  ![Git](https://img.shields.io/badge/Version%20Control-Git-orange?logo=git&logoColor=white&style=for-the-badge)
+  ![GitHub](https://img.shields.io/badge/Repository-GitHub-orange?logo=github&logoColor=white&style=for-the-badge)
+  ![Figma](https://img.shields.io/badge/Design-Figma-purple?logo=figma&logoColor=white&style=for-the-badge)
+
+- **Languages**  
+  ![Java](https://img.shields.io/badge/Language-Java-blue?logo=java&logoColor=white&style=for-the-badge)
+  ![HTML](https://img.shields.io/badge/Language-HTML5-red?logo=html5&logoColor=white&style=for-the-badge)
+  ![CSS](https://img.shields.io/badge/Style-CSS3-blue?logo=css3&logoColor=white&style=for-the-badge)
+  ![JavaScript](https://img.shields.io/badge/Script-JavaScript-yellow?logo=javascript&logoColor=white&style=for-the-badge)
+
+- **Frameworks & Libraries**  
+  ![Spring Boot](https://img.shields.io/badge/Framework-Spring%20Boot-brightgreen?logo=spring-boot&logoColor=white&style=for-the-badge)
+  ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql&logoColor=white&style=for-the-badge)
+  ![Gradle](https://img.shields.io/badge/Build-Gradle-blue?logo=gradle&logoColor=white&style=for-the-badge)
+  ![Lombok](https://img.shields.io/badge/Library-Lombok-red?logo=lombok&logoColor=white&style=for-the-badge)
 
 ---
 
